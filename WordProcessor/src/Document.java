@@ -176,7 +176,7 @@ public class Document extends JFrame implements MenuListener, ActionListener, Ke
 
 			final JFileChooser fc = new JFileChooser();
 			fc.setDialogTitle("Save as");
-			fc.setFileSelectionMode(JFileChooser.DIRECTORIES_ONLY);
+			fc.setFileSelectionMode(JFileChooser.FILES_ONLY);
 			int userSelection = fc.showSaveDialog(this);
 			if (userSelection != JFileChooser.APPROVE_OPTION) {
 				return;
